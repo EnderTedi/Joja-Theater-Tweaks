@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <LangVersion>14.0</LangVersion>
+        <Nullable>enable</Nullable>
+        <EnableHarmony>true</EnableHarmony>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Name>Joja Theater Tweaks</Name>
+        <Description>Move the Theater in the Joja Route to the CC Route location and show the abandonded JojaMart in the Joja Route</Description>
+        <UniqueId>EnderTedi.JojaTheaterTweaks</UniqueId>
+        <Authors>EnderTedi, Midnight Voyager</Authors>
+        <Version>1.0.0</Version>
+        <MinimumGameVersion>1.6.0</MinimumGameVersion>
+        <MinimumApiVersion>4.0.0</MinimumApiVersion>
+        <UpdateKeys>Nexus:0</UpdateKeys>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Publicize Include="Stardew Valley"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="JetBrains.Annotations" Version="2026.2.0"/>
+        <PackageReference Include="Krafs.Publicizer" Version="2.3.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Leclair.Stardew.ModManifestBuilder" Version="2.4.1"/>
+        <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include=".github\workflows\build.yaml"/>
+    </ItemGroup>
+
+</Project>
