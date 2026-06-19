@@ -9,7 +9,7 @@ namespace JojaTheaterTweaks.Patches;
 [UsedImplicitly, HarmonyPatch(typeof(Town))]
 public class MoveMovieTheater
 {
-    [HarmonyPatch(nameof(AbandonedJojaMart.MakeMapModifications)), HarmonyTranspiler]
+    [HarmonyPatch(nameof(Town.MakeMapModifications)), HarmonyTranspiler]
     public static IEnumerable<CodeInstruction> MoveMovieTheaterInJojaRoute(IEnumerable<CodeInstruction> insns, ILGenerator gen)
     {
         CodeMatcher matcher = new(insns);

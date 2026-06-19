@@ -14,7 +14,7 @@
   "Description": "Move the Theater in the Joja Route to the CC Route location and show the abandonded JojaMart in the Joja Route",
   "MinimumApiVersion": "4.0.0",
   "MinimumGameVersion": "1.6.0",
-  "EntryDll": "JojaTheaterMove.dll",
+  "EntryDll": "JojaTheaterTweaks.dll",
   "UpdateKeys": [
     "Nexus:0"
   ]
